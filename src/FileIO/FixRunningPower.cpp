@@ -118,7 +118,10 @@ class FixRunningPowerConfig : public DataProcessorConfig
                               "wind direction (origin) unit is degrees "
                               "from -179 to +180 (-90=W, 0=N, 90=E, 180=S)\n"
                               "Note: if the file already contain wind data "
-                              "it will be overridden if wind is entered")));
+                              "it will be overridden if wind is entered".
+                              "You have to make sure that you have set"
+                              "your ride type to \"Run\" in the details tab"
+                              "of your activity, otherwise you don't get any output." )));
         }
 
         void readConfig() {
